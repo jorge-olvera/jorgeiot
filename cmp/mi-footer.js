@@ -3,7 +3,7 @@ class MiFooter
   connectedCallback() {
     this.innerHTML = /* html */
       `&copy; 2021
-      Gilberto Pacheco Gallegos.`;
+      Jorge Olvera Martinez.`;
   }
 }
 customElements.define(
