@@ -17,21 +17,24 @@
     <script type="module"
       src="cmp/mi-footer.js">
       </script>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
   </head>
   <body>
     <div class="contenido">
-      <h1>Control IoT</h1>
-      <p>
-        <a href="dispositivo.html"
-          target="_blank">Ver
-          dispositivo
-          simulado.</a>
-      </p>
-      <p>
-        <a href="historial.html"
-          target="_blank">Ver
-          historial.</a>
-      </p>
+      <h1>Control IoT</h1> 
+      <button class="mdc-button mdc-button--outlined">
+        <a href="dispositivo.html" target="_blank"</a>
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Ver dispositivo simulado</span>
+     </button><br>
+      <button class="mdc-button mdc-button--outlined">
+        <a href="historial.html" target="_blank"</a>
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Ver
+          historial.</span>
+     </button>
       <p>
         <label>
           Dispositivo
