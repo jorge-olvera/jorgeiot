@@ -1,2 +1,2 @@
 # jorgeiot
-Ejemplo de IoT
+Ejemplo de IoT en: https://jorge-olvera.github.io/jorgeiot/
