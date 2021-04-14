@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width,
-       initial-scale=1.0">
-    <title>Historial IoT</title>
-    <script
-      src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
-    <script
-      src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
-    <script src="js/init.js">
-    </script>
-    <link href="css/estilos.css"
-      rel="stylesheet">
-    <script type="module"
-      src="cmp/mi-footer.js">
-      </script>
-  </head>
-  <body>
-    <div class="contenido">
-      <table>
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>dispositivoId</th>
-            <th>valor</th>
-            <th>timestamp</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Historial IoT</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script src="js/init.js"></script>
+
+  <meta name="theme-color" content="#ac90b8">
+  <link rel="icon" sizes="32x32" href="favicon.ico">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="herramientas">
+      <h1>Historial IoT</h1>
     </div>
-    <script type="module"
-      src="js/CtrlHistorial.js">
-      </script>
-  </body>
+  </header>
+  <div class="contenido">
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>dispositivoId</th>
+          <th>valor</th>
+          <th>timestamp</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+<footer>
+  <div>
+    <strong>&copy; 2021 Olvera Martínez Jorge </strong>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script type="module" src="js/CtrlHistorial.js"></script>
+</body>
+
 </html>

@@ -1,11 +1,117 @@
+:root {
+  /* CUSTOM PROPERTIES
+   * Valores que puede definir el
+   * desarrollador y reutilizar
+   * en todas las definiciones de
+   * estilos.
+   * Deben iniciar con -- y
+   * colocarse en el elemento
+   * raíz. */
+  /* Propiedades de la interfaz */
+  --colorPrimario: white;
+  --colorPrimarioFondo: #ac90b8;
+  --colorActive: #4646462c;
+  --colorContenido: black;
+  --colorContenidoFondo: white;
+  /* Propiedades para campos */
+  --colorSinFoco: gray;
+  --colorConFoco: #007180;
+  --colorError: #89e5f5;
+  --colorCampo: #eeeeee;
+  /* Los 2 primeros fonts son para
+   * apple y "Roboto" es para
+   * Android. */
+  --font-family: -apple-system,
+    BlinkMacSystemFont, Roboto,
+    sans-serif;
+  /* Uso de la custom property
+   * "--colorContenido". */
+  color: var(--colorContenido);
+  font-family: var(--font-family);
+  background-color:
+    var(--colorContenidoFondo);
+}
+
 body {
   font-family: sans-serif;
   text-align: center;
+  margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	padding-top: 80px;
 }
-
 .contenido {
   display: inline-block;
   text-align: start;
+}
+
+header {
+  color: var(--colorPrimario);
+  background-color:
+    var(--colorPrimarioFondo);
+  
+ 
+  top: 0;
+  z-index: 1;
+	height: 80px;
+	
+	width: 100%; 
+	left: 0; 
+	top: 0; 
+	position: absolute;
+  text-align: center;
+}
+
+.herramientas {
+  display: flex;
+  padding: 1rem;
+  position: relative;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 auto 0 0;
+  padding: 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.ios h1 {
+  margin: 0 auto 0 auto;
+}
+
+.ios .acciones {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.icono {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  /* Quita una especie de borde
+   * alrededor del borde para
+   * indicar que el elemento tiene
+   * el foco. */
+  outline: none;
+}
+
+.icono:active {
+  background-color:
+    var(--colorActive);
+}
+
+.contenido {
+  padding: 0 1rem;
+  margin-bottom: 4.75rem;
 }
 
 meter,
@@ -14,8 +120,32 @@ output {
   display: block;
 }
 
-mi-footer {
-  display: block;
-  margin: 1rem 0;
-  font-size: small;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  color: white;
+  background-color: var(--colorError);
+}
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ac90b8;
+  color: white;
+  text-align: center;
 }
